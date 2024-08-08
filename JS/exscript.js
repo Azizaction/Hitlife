@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (email === 'user@example.com' && password === 'password') {
                 localStorage.setItem('loggedInUser', JSON.stringify({ email: email }));
-                window.location.href = 'dashboard.html'; 
+                window.location.href = '../HTML/dashboard.html'; 
             } else {
                 document.getElementById('message').textContent = 'Email ou mot de passe incorrect';
                 document.getElementById('message').style.color = 'red';
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function logout() {
     localStorage.removeItem('loggedInUser');
-    window.location.href = 'index.html'; 
+    window.location.href = '../HTML/index.html'; 
 }
 
 
